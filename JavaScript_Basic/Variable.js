@@ -47,9 +47,21 @@ console.log(mess); // undefined
 
 //const keyword :
 const obj = { name: "John" };
-obj.name = "Jane"; // Allowed - modifying property
-// obj = {}; // Error - cannot reassign the reference
+obj.name = "Jane"; // Allowed - modifying property : Mutability of Contents
+// modifies the name property of the object. This is permitted because const only prevents reassignment of the variable itself, not mutations to the object's contents.
+// obj = {}; // Error - cannot reassign the reference : Immutability of Reference:
 
 const arr = [1, 2, 3];
-arr.push(4); // Allowed - modifying array
-// arr = []; // Error - cannot reassign the reference
+arr.push(4); // Allowed - modifying array :
+// arr = []; // Error - cannot reassign the reference'
+
+
+/**
+ * An identifier is a name (sequence of characters) used to identify variables, functions, objects, classes, etc.
+ * A variable is a storage location in memory that holds a value (e.g., a number, string, object).
+ * It is declared using keywords like var, let, or const, and its name is an identifier.
+ * let message = "Hello"; – Here, message is the identifier (name), and the variable holds the string "Hello".
+ * Identifier is just the name/label.
+ * Variable is the actual entity (storage) that the identifier refers to.
+ * Every variable has an identifier as its name, but not every identifier is a variable (e.g., function names are identifiers but not variables).
+ */
